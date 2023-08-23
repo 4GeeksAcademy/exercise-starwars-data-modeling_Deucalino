@@ -34,6 +34,7 @@ class Planet(Base):
 
 class Favorites(Base):
     __tablename__='favorites'
+    id=Column(Integer, primary_key=True)
     bestcharacter_uid=Column(Integer, ForeignKey('characters.uid'))
     bestplanet_uid=Column(Integer, ForeignKey('planet.planet_uid'))
     user_id = Column(Integer, ForeignKey('user.id'))
