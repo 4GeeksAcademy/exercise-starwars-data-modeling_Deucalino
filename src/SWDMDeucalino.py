@@ -44,4 +44,3 @@ class Favorites(Base):
 
 ## Draw from SQLAlchemy base
 render_er(Base, 'diagram.png')
-
